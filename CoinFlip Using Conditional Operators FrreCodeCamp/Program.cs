@@ -8,6 +8,28 @@ int number = rnd.Next(0,2);
 Console.WriteLine((number == 0) ? "Heads" : "Tails");
 
 
+//  Reverse A String
+
+string name = "My Name is Sarfaraz";
+
+char[] convert = name.ToCharArray();
+
+for (int i = 0, j = convert.Length - 1; i < j; i++, j--)
+{
+    // Swap i with j
+    convert[i] = name[j];
+    // Swap i with j
+    convert[j] = name[i];
+
+}
+// Display the reversed string
+Console.WriteLine(new string(convert));
+
+//  Second method to reverse a string
+
+string nme = "My Name is Sarfaraz";
+string roe = new string(nme.Reverse().ToArray());
+Console.WriteLine(roe);
 
 //  Another Task
 string permission = "Admin|Manager";
